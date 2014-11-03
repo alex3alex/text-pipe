@@ -1,0 +1,37 @@
+{
+  "name": "text-pipe",
+  "version": "0.0.1",
+  "description": "Transform stream generators for stream driven data extract and transformation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js | faucet"
+  },
+  "keywords": [
+    "text",
+    "streams",
+    "stream",
+    "extract",
+    "etl",
+    "transform",
+    "transforms",
+    "data-transformation",
+    "text-processing",
+    "processing"
+  ],
+  "author": "Wil Moore III <wil.moore@wilmoore.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wilmoore/text-pipe"
+  },
+  "dependencies": {
+    "through2-filter": "^1.4.0",
+    "through2-map": "^1.4.0"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "split": "^0.3.0",
+    "tape": "^3.0.1",
+    "through": "^2.3.6"
+  }
+}

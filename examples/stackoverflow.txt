@@ -1,0 +1,7 @@
+question_id: 26694200
+link: http://stackoverflow.com/questions/26694200/infinite-loop-when-trying-to-count-letter-frequencies
+title: "Infinite loop when trying to count letter frequencies"
+
+question_id: 26598084
+link: http://stackoverflow.com/questions/26598084/restforce-gem-salesforce-api-retuning-oauth2error-missing-oauth-token
+title: "Restforce Gem, Salesforce API retuning OAuth2::Error Missing_OAuth_Token"
