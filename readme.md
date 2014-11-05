@@ -8,7 +8,7 @@
 
 ## Examples
 
-###### Extract Stackoverflow question IDs.
+###### Extract Stackoverflow question IDs (see: [examples/extract-question-ids.js](https://github.com/wilmoore/text-pipe/blob/master/examples/extract-question-ids.js)).
 
     % node examples/extract-question-ids.js
     26694200
