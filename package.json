@@ -1,6 +1,6 @@
 {
   "name": "text-pipe",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Transform stream generators for stream driven data extract and transformation.",
   "main": "index.js",
   "scripts": {
