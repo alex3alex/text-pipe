@@ -1,6 +1,6 @@
 # text-pipe
 
-[![Build Status](http://img.shields.io/travis/wilmoore/text-pipe.svg)](https://travis-ci.org/wilmoore/text-pipe) [![NPM version](http://img.shields.io/npm/v/text-pipe.svg)](https://www.npmjs.org/package/text-pipe) [![NPM downloads](http://img.shields.io/npm/dm/text-pipe.svg)](https://www.npmjs.org/package/text-pipe) [![LICENSE](http://img.shields.io/npm/l/text-pipe.svg)](LICENSE)
+[![Build Status](http://img.shields.io/travis/wilmoore/text-pipe.svg)](https://travis-ci.org/wilmoore/text-pipe) [![NPM version](http://img.shields.io/npm/v/text-pipe.svg)](https://www.npmjs.org/package/text-pipe) [![NPM downloads](http://img.shields.io/npm/dm/text-pipe.svg)](https://www.npmjs.org/package/text-pipe) [![LICENSE](http://img.shields.io/npm/l/text-pipe.svg)](license)
 
 > Transform stream generators for stream driven data extract and transformation.
 
@@ -48,7 +48,7 @@ For each value, return only values that pass a truth test.
 
 ## License
 
-  [MIT](LICENSE)
+  [MIT](license)
 
 [through2-filter]: https://www.npmjs.org/package/through2-filter
 [through2-map]: https://www.npmjs.org/package/through2-map
