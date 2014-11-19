@@ -18,6 +18,12 @@
     "text-processing",
     "processing"
   ],
+  "files": [
+    "index.js",
+    "license",
+    "package.json",
+    "readme.md"
+  ],
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
   "license": "MIT",
   "repository": {
