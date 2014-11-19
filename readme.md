@@ -6,13 +6,7 @@
 
     $ npm install text-pipe
 
-## Examples
-
-###### Extract Stackoverflow question IDs (see: [examples/extract-question-ids.js](https://github.com/wilmoore/text-pipe/blob/master/examples/extract-question-ids.js)).
-
-    % node examples/extract-question-ids.js
-    26694200
-    26598084
+Check out the [examples folder](https://github.com/wilmoore/text-pipe/blob/master/examples/).
 
 ## API
 
@@ -40,8 +34,21 @@ For each value, return only values that pass a truth test.
 
     stream.pipe(transform);
 
+###### .reduce
+
+> aliases: .fold, .inject
+
+`Array.prototype.reduce` as a through stream.
+
+    var max = reduce(function(memo, val) {
+      return Number(val) > Number(memo) ? val : memo;
+    }, 0)
+
+    stream.pipe(max);
+
 ## Depends on
 
+- [stream-reduce]
 - [through2-filter]: You could use this directly if you want to write `{wantStrings: true}` boilerplate.
 - [through2-map]: You could use this directly if you want to write `{wantStrings: true}` boilerplate.
 - [through2]: You could use this directly if you want to write `write` and `end` boilerplate.
@@ -53,4 +60,5 @@ For each value, return only values that pass a truth test.
 [through2-filter]: https://www.npmjs.org/package/through2-filter
 [through2-map]: https://www.npmjs.org/package/through2-map
 [through2]: https://www.npmjs.org/package/through2
+[stream-reduce]: https://www.npmjs.org/package/stream-reduce
 

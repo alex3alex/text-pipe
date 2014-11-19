@@ -9,20 +9,16 @@ exports.filter = select;
 exports.keep = select;
 exports.map = map;
 exports.transform = map;
-
-/*!
- * imports.
- */
-
-var filter = require('through2-filter');
-var map = require('through2-map');
+exports.reduce = reduce;
+exports.fold = reduce;
+exports.inject = reduce;
 
 /**
  * for each value, return only values that pass a truth test.
  */
 
 function select(test) {
-  return filter({wantStrings: true}, test);
+  return require('through2-filter')({wantStrings: true}, test);
 }
 
 /**
@@ -30,5 +26,14 @@ function select(test) {
  */
 
 function map(transformer) {
-  return map({wantStrings: true}, transformer);
+  return require('through2-map')({wantStrings: true}, transformer);
 }
+
+/**
+ * `Array.prototype.reduce` as a through stream.
+ */
+
+function reduce(transformer, initial) {
+  return require('stream-reduce')(transformer, initial);
+}
+

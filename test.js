@@ -7,6 +7,7 @@
 var test = require('tape');
 var map = require('./').map;
 var select = require('./').select;
+var reduce = require('./').reduce;
 var fs = require('fs');
 var split = require('split');
 var through = require('through');
@@ -67,5 +68,36 @@ test('map', function (t) {
     .pipe(split())
     .pipe(select(predicate))
     .pipe(map(number))
+    .pipe(through(write, end));
+});
+
+test('reduce', function (t) {
+  t.plan(1);
+
+  var actual = 0;
+  var expected = 26694200;
+
+  function number(string) {
+    return /\d+/.exec(string)[0]
+  }
+
+  function maxValue(memo, val) {
+    return Number(val) > Number(memo) ? val : memo;
+  }
+
+  function write(data) {
+    actual = Number(data);
+  }
+
+  function end() {
+    t.equal(actual, expected);
+    this.queue(null);
+  }
+
+  fs.createReadStream('./examples/stackoverflow.txt')
+    .pipe(split())
+    .pipe(select(predicate))
+    .pipe(map(number))
+    .pipe(reduce(maxValue, 0))
     .pipe(through(write, end));
 });
