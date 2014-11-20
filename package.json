@@ -1,6 +1,6 @@
 {
   "name": "text-pipe",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Transform stream enumeratee generators for stream-driven data extract and transformation (i.e. ETL).",
   "main": "index.js",
   "scripts": {
