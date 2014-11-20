@@ -2,7 +2,7 @@
 
 [![Build Status](http://img.shields.io/travis/wilmoore/text-pipe.svg)](https://travis-ci.org/wilmoore/text-pipe) [![NPM version](http://img.shields.io/npm/v/text-pipe.svg)](https://www.npmjs.org/package/text-pipe) [![NPM downloads](http://img.shields.io/npm/dm/text-pipe.svg)](https://www.npmjs.org/package/text-pipe) [![LICENSE](http://img.shields.io/npm/l/text-pipe.svg)](license)
 
-> Transform stream generators for stream driven data extract and transformation.
+> Transform stream enumeratee generators for stream-driven data extract and transformation (i.e. ETL).
 
     $ npm install text-pipe
 

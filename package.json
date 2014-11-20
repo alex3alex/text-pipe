@@ -1,7 +1,7 @@
 {
   "name": "text-pipe",
   "version": "0.5.0",
-  "description": "Transform stream generators for stream driven data extract and transformation.",
+  "description": "Transform stream enumeratee generators for stream-driven data extract and transformation (i.e. ETL).",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js | faucet"
@@ -10,8 +10,15 @@
     "text",
     "streams",
     "stream",
+    "enumeratee",
     "extract",
     "etl",
+    "map",
+    "reduce",
+    "select",
+    "fold",
+    "keep",
+    "filter",
     "transform",
     "transforms",
     "data-transformation",
@@ -37,8 +44,8 @@
   },
   "devDependencies": {
     "faucet": "0.0.1",
-    "split": "^0.3.0",
-    "tape": "^3.0.1",
+    "split": "^0.3.1",
+    "tape": "^3.0.3",
     "through": "^2.3.6"
   }
 }
