@@ -6,7 +6,16 @@
 
     $ npm install text-pipe
 
-Check out the [examples folder](https://github.com/wilmoore/text-pipe/blob/master/examples/).
+text-pipe is a node module that includes functions for creating enumeratees (i.e. map, reduce) that serve as transform streams. This allows you to iteratively compose complex data processing workflows via simple map, reduce, and filter-like functions. Check out the [examples folder](https://github.com/wilmoore/text-pipe/blob/master/examples/) for working code samples. In order to run the code samples, you must do the following:
+
+    % git clone https://github.com/wilmoore/text-pipe.git
+    % cd text-pipe
+    % npm install
+    % cd examples
+    % cat stackoverflow.txt
+    % node extract-question-ids
+
+NOTE: read the comments and the code in the examples to get a feel for how it works.
 
 ## API
 
